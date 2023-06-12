@@ -31,4 +31,6 @@ describe('LoginWithDifferentsAccount', () => {
         cy.get('[data-test="error"]').should('contain.text', 'Epic sadface: Sorry, this user has been locked out.')
     })
 
+    //cy.screenshot()
+
 })

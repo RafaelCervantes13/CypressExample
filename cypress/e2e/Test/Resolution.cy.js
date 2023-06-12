@@ -1,4 +1,4 @@
-const resolutions = Cypress.env('resolutions');
+const resolution = Cypress.env('resolutions');
 
 describe("First Test", () => {
 
@@ -6,6 +6,7 @@ describe("First Test", () => {
     resolutions.forEach(element => {
       cy.visit('https://mylegalstream.com/')
       if (Cypress._.isArray(element)) { //llama al metodo isArray para validar si es un arreglo
+        cy.log('Entroo');
         cy.viewport(element[0], element[1])
       }
 

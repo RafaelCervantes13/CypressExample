@@ -9,6 +9,9 @@ module.exports = defineConfig({
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: false,
+    experimentalSessionAndOrigin: true,
+    experimentalSessionSupport: true
+    
   },
   e2e: {
     setupNodeEvents(on, config) {
